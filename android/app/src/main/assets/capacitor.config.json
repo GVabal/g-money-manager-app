@@ -1,0 +1,6 @@
+{
+	"appId": "dev.vabalas.gmoneymanager",
+	"appName": "g-money-manager-app",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
