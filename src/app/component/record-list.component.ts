@@ -9,7 +9,7 @@ import { CategoryService } from '../service/category.service';
   template: `
     <mat-list>
       <mat-list-item *ngFor="let record of records" [routerLink]="['record', record.id]">
-          <mat-icon mat-list-icon>{{findCategory(record.categoryId)}}</mat-icon>
+          <mat-icon mat-list-icon>{{categoryName(record.categoryId)}}</mat-icon>
           <div mat-line>
               <span *ngIf="record.type.valueOf() === 1">-</span> {{record.amount}} €
           </div>
@@ -33,7 +33,7 @@ export class RecordListComponent implements OnInit {
                                      .sort((a, b) => b.timestamp - a.timestamp);
   }
 
-  findCategory(id: number): Category {
-    return this.categoryService.getCategoryById(id);
+  categoryName(id: number): string {
+    return this.categoryService.getCategoryById(id).name;
   }
 }

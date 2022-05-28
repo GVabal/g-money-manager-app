@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { App } from '@capacitor/app';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-constructor(
-  
-) {}
-
   ngOnInit(): void {
-    
+    App.addListener('backButton', () => {
+      if (window.location.pathname == '/') {
+        App.exitApp();
+      }
+      else {
+        window.history.back();
+      }
+    });
   }
 }

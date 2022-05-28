@@ -8,9 +8,7 @@ import { CategoryService } from '../service/category.service';
   template: `
     <mat-list>
       <mat-list-item>Income: {{totalIncome}} €</mat-list-item>
-      <mat-divider></mat-divider>
       <mat-list-item>Expenses: {{totalExpenses}} €</mat-list-item>
-      <mat-divider></mat-divider>
       <mat-list-item>Net: {{totalIncome - totalExpenses}} €</mat-list-item>
     </mat-list> 
   `,

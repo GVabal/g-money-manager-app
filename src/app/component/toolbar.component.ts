@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-edit-view',
+  selector: 'app-toolbar',
   template: `
     <mat-toolbar color="primary">
-      <mat-icon mat-list-icon routerLink="/">arrow_back</mat-icon>
+      <mat-icon mat-list-icon routerLink="/category">settings</mat-icon>
     </mat-toolbar>
-    <p>categories go here</p>
-    <p>control go here</p>
   `,
   styles: [
   ]
 })
-export class EditViewComponent implements OnInit {
+export class ToolbarComponent implements OnInit {
 
   constructor() { }
 

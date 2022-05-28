@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-view',
   template: `
-    <mat-toolbar color="primary"></mat-toolbar>
+    <app-toolbar></app-toolbar>
     <app-record-stats></app-record-stats>
     <mat-divider></mat-divider>
     <app-record-list></app-record-list>

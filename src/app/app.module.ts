@@ -11,9 +11,12 @@ import { RecordStatsComponent } from './component/record-stats.component';
 import { MatListModule } from '@angular/material/list'; 
 import { MatIconModule } from '@angular/material/icon';
 import { CustomDatePipe } from './pipe/custom-date.pipe';
-import { RecordDetailsComponent } from './component/record-details.component'; 
 import { MatButtonModule } from '@angular/material/button';
-import { EditViewComponent } from './view/edit-view.component'; 
+import { EditRecordViewComponent } from './view/edit-record-view.component';
+import { CategoryManagmentViewComponent } from './view/category-managment-view.component';
+import { ToolbarComponent } from './component/toolbar.component'; 
+import { MatGridListModule } from '@angular/material/grid-list';
+import { RecordDetailsViewComponent } from './view/record-details-view.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +25,10 @@ import { EditViewComponent } from './view/edit-view.component';
     RecordListComponent,
     RecordStatsComponent,
     CustomDatePipe,
-    RecordDetailsComponent,
-    EditViewComponent
+    EditRecordViewComponent,
+    CategoryManagmentViewComponent,
+    ToolbarComponent,
+    RecordDetailsViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { EditViewComponent } from './view/edit-view.component';
     MatListModule,
     MatIconModule,
     MatButtonModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
