@@ -7,7 +7,6 @@ import { CategoryService } from '../service/category.service';
 @Component({
   selector: 'app-record-details-view',
   template: `
-    <app-toolbar></app-toolbar>
     <mat-list role="list">
         <mat-list-item role="listitem">
             <mat-icon mat-list-icon>{{categoryName(record.categoryId)}}</mat-icon> {{categoryName(record.categoryId)}}

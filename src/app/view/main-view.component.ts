@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-main-view',
   template: `
-    <app-toolbar></app-toolbar>
     <app-record-stats></app-record-stats>
     <mat-divider></mat-divider>
     <app-record-list></app-record-list>

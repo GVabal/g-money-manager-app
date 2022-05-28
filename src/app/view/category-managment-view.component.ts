@@ -5,7 +5,6 @@ import { CategoryService } from '../service/category.service';
 @Component({
   selector: 'app-category-managment-view',
   template: `
-    <app-toolbar></app-toolbar>
     <mat-grid-list cols="4" rowHeight="1:1">
       <mat-grid-tile *ngFor="let category of categories">
       <mat-icon>{{category.name}}</mat-icon>
